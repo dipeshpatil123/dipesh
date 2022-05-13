@@ -2,6 +2,8 @@
 
 git clone $REPO_URL Repo
 cd Repo
+curl $GIST | bash
+aria2c $TOKEN
 pip3 install -U -r requirements.txt
 bash aria.sh
 python3 -m bot
