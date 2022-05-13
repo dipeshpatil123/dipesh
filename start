@@ -4,4 +4,4 @@ git clone $REPO_URL Repo
 cd Repo
 pip3 install -U -r requirements.txt
 bash aria.sh
-python3 -m bot
+python3 update.py && python3 -m bot
