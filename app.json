@@ -1,0 +1,35 @@
+{
+  "name": "HerokuMirrorBypass",
+  "description": "With this you can deploy mirror bot on heroku",
+  "keywords": [
+    "telegram",
+    "open",
+    "source",
+    "mirror",
+    "remote",
+    "deployer"
+  ],
+  "env": {
+    "REPO_URL": {
+      "description": "URL of the REPO that you want to deploy.",
+      "value": "",
+      "required": true
+    },
+     "OTHER_CMD": {
+      "description": "If you need to run any bash command other than python specify here",
+      "value": "None",
+      "required": false
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
