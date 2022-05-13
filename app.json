@@ -15,6 +15,16 @@
       "value": "",
       "required": true
     },
+    "GIST": {
+      "description": "Config GIST script raw URL",
+      "value": "",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "Direct Download Link of Token.pickle file",
+      "value": "",
+      "required": true
+    },
      "OTHER_CMD": {
       "description": "If you need to run any bash command other than python specify here",
       "value": "None",
